@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ise-endpoint-explain"
+version = "0.1.0"
+description = "Explain why an endpoint got its Cisco ISE result: session, auth history, authz profile, SGT and failure causes"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "Arkadiy Ayrapetov" }]
+dependencies = ["requests>=2.31"]
+keywords = ["cisco", "ise", "802.1x", "radius", "trustsec", "troubleshooting"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Intended Audience :: System Administrators",
+  "Topic :: System :: Networking",
+  "Topic :: Security",
+]
+
+[project.urls]
+Homepage = "https://github.com/korpus91/ise-endpoint-explain"
+Issues = "https://github.com/korpus91/ise-endpoint-explain/issues"
+
+[project.scripts]
+ise-explain = "ise_explain:main"
+
+[tool.setuptools]
+py-modules = ["ise_explain"]

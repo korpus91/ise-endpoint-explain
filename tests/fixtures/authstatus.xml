@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<authStatusOutputList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <authStatusList key="AA:BB:CC:00:11:22">
+    <authStatusElements>
+      <passed xsi:type="xs:boolean">false</passed>
+      <acs_timestamp>2026-10-06 08:01:12.411</acs_timestamp>
+      <user_name>host/laptop01.example.com</user_name>
+      <nas_ip_address>192.0.2.21</nas_ip_address>
+      <network_device_name>access-sw1</network_device_name>
+      <nas_port_id>GigabitEthernet1/0/14</nas_port_id>
+      <authentication_method>dot1x</authentication_method>
+      <authentication_protocol>EAP-TLS</authentication_protocol>
+      <failure_reason>12514 EAP-TLS failed SSL/TLS handshake because of an unknown CA in the client certificates chain</failure_reason>
+    </authStatusElements>
+    <authStatusElements>
+      <passed xsi:type="xs:boolean">true</passed>
+      <acs_timestamp>2026-10-06 14:22:10.123</acs_timestamp>
+      <user_name>host/laptop01.example.com</user_name>
+      <nas_ip_address>192.0.2.21</nas_ip_address>
+      <network_device_name>access-sw1</network_device_name>
+      <nas_port_id>GigabitEthernet1/0/14</nas_port_id>
+      <authentication_method>dot1x</authentication_method>
+      <authentication_protocol>EAP-TLS</authentication_protocol>
+      <selected_azn_profiles>Corp-Access</selected_azn_profiles>
+      <cts_security_group>Employees</cts_security_group>
+      <other_attr_string>ConfigVersionId=12:!:AuthorizationPolicyMatchedRule=Corp-EAP-TLS:!:IdentityPolicyMatchedRule=Dot1X</other_attr_string>
+    </authStatusElements>
+    <authStatusElements>
+      <passed xsi:type="xs:boolean">false</passed>
+      <acs_timestamp>2026-10-05 17:40:02.002</acs_timestamp>
+      <user_name>host/laptop01.example.com</user_name>
+      <nas_ip_address>192.0.2.22</nas_ip_address>
+      <nas_port_id>GigabitEthernet1/0/3</nas_port_id>
+      <authentication_method>dot1x</authentication_method>
+      <authentication_protocol>EAP-TLS</authentication_protocol>
+      <failure_reason>11036 The Message-Authenticator RADIUS attribute is invalid</failure_reason>
+    </authStatusElements>
+  </authStatusList>
+</authStatusOutputList>
